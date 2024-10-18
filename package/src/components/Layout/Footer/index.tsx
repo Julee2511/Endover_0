@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Header/Logo";
-import { footerLinks } from "@/app/api/data";
+import { footerLinks, footerss } from "@/app/api/data";
 
 const Footer: FC = () => {
   return (
@@ -90,10 +90,20 @@ const Footer: FC = () => {
                 </li>
               ))}
             </ul>
+          </div>   
+         </div>
+         <div className="flex flex-col sm:flex-row justify-between items-center mb-2 py-8">
+         <p className="text-center sm:text-left">© All Rights Reserved by WrapPixel.</p>
+         <div className="flex justify-center space-x-8 sm:mt-0 mt-4">
+             {footerss.map((item, index) => (
+          <div key={index} className="flex items-center justify-center w-4 h-4">
+              <img src={item.icon} alt={item.icon} className="w-full h-full object-contain" />
           </div>
+        ))}
         </div>
-      </div>
-    </footer>
+        </div>
+         </div>
+      </footer>
   );
 };
 

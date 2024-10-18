@@ -32,7 +32,7 @@ const Causes = () => {
         ],
     };
     return (
-        <section className="py-28 bg-grey ">
+        <section className="py-28 bg-grey dark:bg-darklight">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
                 <h2 className="text-center text-30 font-medium mb-3">
                     Causes where need your help
@@ -44,7 +44,7 @@ const Causes = () => {
                     <Slider {...settings}>
                         {CauseData.slice(0, 3).map((item, index) => (
                             <Link href={`/cause/${item.slug}`} key={index} className="px-4">
-                                <div className="bg-white group">
+                                <div className="bg-white group dark:bg-darklight">
                                     <div className="overflow-hidden ">
                                         <Image
                                             src={item.image}

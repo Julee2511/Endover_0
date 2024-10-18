@@ -9,7 +9,7 @@ const CauseList = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                     {CauseData.map((item, index) => (
                         <Link href={`/cause/${item.slug}`} key={index}>
-                            <div className="bg-white group h-full flex flex-col">
+                            <div className="bg-white  dark:bg-darkmode group h-full flex flex-col">
                                 <div className="overflow-hidden flex-1">
                                     <Image
                                         src={item.image}

@@ -4,7 +4,7 @@ const UrgentDonation = () => {
     return (
         <section className=" bg-donation-bg sm:py-52 py-28 bg-no-repeat">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
-                <div className="bg-white max-w-29 w-full px-10 py-14 rounded-lg text-center mx-auto">
+                <div className="bg-white dark:bg-darklight max-w-29 w-full px-10 py-14 rounded-lg text-center mx-auto">
                     <h3 className="sm:text-24 text-18 font-bold mb-5">
                         Child needs to go immediate medical surgery, Help.
                     </h3>

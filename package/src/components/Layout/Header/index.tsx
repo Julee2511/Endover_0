@@ -60,9 +60,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all ${sticky ? "shadow-lg bg-white" : "shadow-none"}`}
+      className={`fixed top-0 z-50 w-full transition-all ${sticky ? "shadow-lg bg-white " : "shadow-none"}`}
     >
-      <div className="bg-gradient-to-r from-primary to-secondary lg:py-0 py-2">
+      <div className="bg-gradient-to-r from-primary to-secondary  lg:py-0 py-2">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
           <div className="lg:hidden block">
             <Logo />
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
             <button
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="flex h-8 w-8 items-center justify-center text-body-color duration-300 dark:text-white"
+              className="flex h-8 w-8 items-center justify-center text-body-color duration-300 dark:text-white "
             >
               <svg
                 viewBox="0 0 16 16"
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
             </button>
             <Link
               href="#"
-              className="hidden lg:block bg-primary border border-primary text-white px-4 py-2 rounded-lg"
+              className="hidden lg:block bg-primary border border-primary dark:bg-darklight text-white px-4 py-2 rounded-lg"
               onClick={() => {
                 setIsSignInOpen(true);
               }}
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
             )}
             <Link
               href="#"
-              className="hidden lg:block bg-primary text-white px-4 py-2 rounded-lg"
+              className="hidden lg:block bg-primary text-white dark:bg-darklight px-4 py-2 rounded-lg"
               onClick={() => {
                 setIsSignUpOpen(true);
               }}
@@ -195,7 +195,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
       </div>
-      <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md sm:flex lg:justify-between justify-center py-5 hidden">
+      <div className="container mx-auto  lg:max-w-screen-xl md:max-w-screen-md sm:flex lg:justify-between justify-center py-5 hidden">
         <div className="lg:block hidden">
           <Logo />
         </div>

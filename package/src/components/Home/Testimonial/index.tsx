@@ -24,7 +24,7 @@ const Testimonial = () => {
         ],
     };
     return (
-        <section className="py-28 bg-grey ">
+        <section className="py-28 bg-grey dark:bg-darklight ">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
                 <h2 className="text-30 font-medium mb-3 text-center">
                     Check what our Customers are Saying
@@ -36,7 +36,7 @@ const Testimonial = () => {
                     <Slider {...settings}>
                         {Reviews.map((item, index) => (
                             <div key={index} className="px-3">
-                                <div className="bg-white pt-12 pb-6 pr-16 pl-10 rounded-md relative">
+                                <div className="bg-white dark:bg-darklight pt-12 pb-6 pr-16 pl-10 rounded-md relative">
                                     <div className="absolute bg-gradient-to-r from-primary to-secondary py-2 pr-6 pl-24 top-11 left-0 flex">
                                         <div className="relative">
                                             <Image

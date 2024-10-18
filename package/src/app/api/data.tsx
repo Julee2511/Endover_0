@@ -238,6 +238,23 @@ export const footerLinks: { link: string }[] = [
     link: "Php Development",
   },
 ];
+export const footerss: { icon: string }[] = [
+  {
+    icon: "/images/footer/facebook-f.svg",
+  },
+  {
+    icon: "/images/footer/instagram.svg",
+  },
+  {
+    icon: "/images/footer/linkedin-in.svg",
+  },
+  {
+    icon: "/images/footer/pinterest.svg",
+  },
+  {
+    icon: "/images/footer/x-twitter.svg",
+  },
+];
 
 export const Reviews: {
   clientImg: string;
