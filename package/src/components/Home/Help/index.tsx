@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Help = () => {
     return (
-        <section className="py-28">
+        <section className="py-28 dark:bg-darklight">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
                 <div className="text-center">
                     <h2 className="text-30 mb-3 font-medium">

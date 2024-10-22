@@ -6,7 +6,7 @@ import { footerLinks, footerss } from "@/app/api/data";
 
 const Footer: FC = () => {
   return (
-    <footer className="pt-16">
+    <footer className="pt-16 dark:bg-darklight">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 pb-16 border-b border-border">
           <div className="lg:col-span-3 md:col-span-4 col-span-6">

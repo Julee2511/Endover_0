@@ -60,10 +60,12 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all ${sticky ? "shadow-lg bg-white " : "shadow-none"}`}
+      className={`fixed top-0 z-50 w-full transition-all ${sticky ? "shadow-lg bg-white" : "shadow-none"}`}
     >
-      <div className="bg-gradient-to-r from-primary to-secondary  lg:py-0 py-2">
-        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
+
+      <div className="bg-gradient-to-r from-primary to-secondary lg:py-0 py-2 dark:bg-darklight ">
+      <div className="dark:bg-darklight">
+        <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4  ">
           <div className="lg:hidden block">
             <Logo />
           </div>
@@ -149,7 +151,7 @@ const Header: React.FC = () => {
         )}
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
+          className={`lg:hidden fixed top-0 right-0 h-full w-full  bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
         >
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">Menu</h2>
@@ -195,7 +197,9 @@ const Header: React.FC = () => {
           </nav>
         </div>
       </div>
-      <div className="container mx-auto  lg:max-w-screen-xl md:max-w-screen-md sm:flex lg:justify-between justify-center py-5 hidden">
+      </div>
+      <div className="dark:bg-darklight">
+      <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md sm:flex lg:justify-between justify-center py-5 hidden">
         <div className="lg:block hidden">
           <Logo />
         </div>
@@ -236,6 +240,7 @@ const Header: React.FC = () => {
             Donate now
           </Link>
         </div>
+      </div>
       </div>
     </header>
   );

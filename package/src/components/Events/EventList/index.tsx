@@ -6,7 +6,7 @@ import { format } from "date-fns";
 
 const EventList = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 dark:bg-darklight">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
           {Eventdata.map((item, index) => (

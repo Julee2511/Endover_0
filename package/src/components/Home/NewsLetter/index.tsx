@@ -5,7 +5,7 @@ import BlogCard from "./blogCard";
 const Newsletter = () => {
     const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     return (
-        <section className="py-28">
+        <section className="py-28 dark:bg-darklight">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
                 <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-44">
                     <div className="">
@@ -21,7 +21,7 @@ const Newsletter = () => {
                             </p>
                         </div>
                         <form>
-                            <div className="mb-6">
+                            <div className="mb-6 ">
                                 <input type="text" placeholder="Your Name" className="w-full p-4 border border-border rounded" />
                             </div>
                             <div className="mb-6">

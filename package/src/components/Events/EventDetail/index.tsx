@@ -28,7 +28,7 @@ const EventDetails: FC<EventProps> = ({
     ? format(new Date(eventdate), "MMM dd, yyyy")
     : "Date not available";
   return (
-    <section className="sm:mt-28 pt-28 sm:pb-28 pb-12">
+    <section className="sm:mt-28 pt-28 sm:pb-28 pb-12 dark:bg-darklight">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid grid-cols-12 gap-8">
           <div className="lg:col-span-9 col-span-12">
@@ -45,6 +45,7 @@ const EventDetails: FC<EventProps> = ({
             <h4 className="text-darktext text-18 font-medium mb-6">Info</h4>
             <div className="pb-6 border-b border-border mb-6">
               <table>
+                    <tbody>
                 <tr className="">
                   <td>
                     <h5 className="text-muted text-16 pb-4">Category:</h5>
@@ -95,6 +96,7 @@ const EventDetails: FC<EventProps> = ({
                     <p className="text-muted text-16 pb-4 pl-4">{entrants}</p>
                   </td>
                 </tr>
+                </tbody>
               </table>
             </div>
             <div className="flex items-center justify-between">
@@ -140,6 +142,64 @@ const EventDetails: FC<EventProps> = ({
             </div>
           </div>
         </div>
+        <div className="flex space-x-8 mt-20">
+        <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-1.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-96"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-2.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-96"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-3.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-95"
+                  />
+                </Link>
+                </div>
+                <div className="flex space-x-8 mt-8">
+        <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-4.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-96"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-5.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-96"
+                  />
+                </Link>
+                <Link href="#">
+                  <Image
+                    src="/images/event/eventdetai-6.png"
+                    alt="icon"
+                    width={400}
+                    height={400}
+                    className="h-48 w-95"
+                  />
+                </Link>
+                </div>
       </div>
     </section>
   );

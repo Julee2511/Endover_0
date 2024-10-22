@@ -8,7 +8,7 @@ const Location = () => {
   ];
   return (
     <>
-      <section className="bg-primary py-24">
+      <section className="bg-primary py-24 dark:bg-darklight">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md">
           <div className="">
             <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 border-b border-solid border-white border-opacity-50 pb-11">

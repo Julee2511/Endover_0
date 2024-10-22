@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CauseList = () => {
     return (
-        <section className="py-28">
+        <section className="py-28 dark:bg-darklight">
             <div className="container mx-auto lg:max-w-screen-xl px-4">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                     {CauseData.map((item, index) => (

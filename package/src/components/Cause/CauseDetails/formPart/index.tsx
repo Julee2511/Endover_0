@@ -3,12 +3,12 @@ import Link from "next/link"
 const FormPart = () => {
     return (
         <>
-            <div className="bg-grey py-5 px-8 rounded border border-border mb-8">
+            <div className="bg-grey py-5 px-8 rounded border border-border mb-8 dark:bg-darklight">
                 <p className="mb-0 text-16 text-muted">
                     <span className="text-midnight_text">Notice:</span> Test mode is enabled. While in test mode no live donations are processed.
                 </p>
             </div>
-            <div className="bg-grey px-8 py-14 rounded border border-border">
+            <div className="bg-grey px-8 py-14 rounded border border-border dark:bg-darklight">
                 <div className="border border-border py-5 px-10 rounded-md mb-11">
                     <p className="text-14 text-muted">
                         The maximum custom donation amount for this form is $999,999.99

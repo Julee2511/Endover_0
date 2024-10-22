@@ -6,7 +6,7 @@ import { format } from "date-fns";
 
 const FutureEvents = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 dark:bg-darklight">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="text-center">
           <h2 className="text-30 font-medium">Upcoming Events Near You</h2>
